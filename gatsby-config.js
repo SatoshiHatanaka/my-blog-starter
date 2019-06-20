@@ -5,7 +5,7 @@ module.exports = {
     title: `Blog`,
     author: `Satoshi Hatanaka`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://satoshi-hatanaka.netlify.com/`,
     social: {
       twitter: `PastelCruller`,
     },
@@ -59,7 +59,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: process.env.GOOGLE_TRACKING_ID,
       },
     },
     // `gatsby-plugin-feed`,
